@@ -1,3 +1,300 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    
+}
+
+/* Your code starts here! */
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+}
+
+header {
+	width: 90%;
+	background-color: coral;
+	opacity: 70%;
+	padding: 10px;
+	position: fixed;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+header nav a{
+	color: black;
+}
+header .logo {
+	width: 15%;
+}
+
+header nav a{
+	
+	text-decoration: none;
+}
+
+header nav a:hover{
+	border: 1px solid white;
+	padding: 8px;
+	background-color: black;
+	border-radius: 30px;
+	color: white;
+}
+
+.cta {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10% 0;
+	width: 100%;
+}
+
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.cta img{
+	width: 44%;
+}
+
+h1 {
+	display: flex;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 500%;
+	width: 44%;
+	
+}
+
+button {
+	padding: 5px 45px;
+	font-size: 15px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 25px;
+	text-align: center;
+}
+
+button:hover {
+	background-color: coral;
+	color: white;
+}
+
+hr {
+	border: 1px solid black;
+	width: 100%;
+	background-color: black;
+	margin-top: 3%;
+}
+
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.middle-img {
+	width: 100%;
+	margin-top: 3%;
+}
+
+.bottom-content {
+	display:flex;
+	justify-content: space-around;
+	justify-content: space-between;
+	margin-top: 3%;
+}
+
+.contact {
+	margin-top: 3%;
+}
+
+address {
+	line-height: 1.5;
+}
+.contact p{
+	line-height: 2;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+	margin-bottom: 7%;
+}
+
+/* Start of the Services page CSS styling*/
+
+
+.nav2 {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nav2 nav a {
+	margin-left: 8%;
+}
+.logo2 {
+	width: 50%;
+	margin-left: 20%;
+}
+.services-header-img {
+	width: 100%;
+	margin-top: 7%
+}
+
+.p2-title , .p2-title p{
+	width: 100%;
+	margin-top: 3%;
+}
+
+.p2-main-over {
+	width: 100%;
+}
+
+.p2-main-1{
+	display: flex;
+	
+}
+
+.p2-main-1 .p2-a, .p2-1{
+	border: 1px solid black;
+	padding: 3%;
+	margin: 2%;
+	background: lightgrey;
+}
+
+
+.p2-main-2{
+	display: flex;
+	
+}
+
+.p2-main-2 .p2-2, .p2-3{
+	border: 1px solid black;
+	padding: 3%;
+	margin: 2%;
+	background: lightgrey;
+}
+
+.p2-main-3{
+	display: flex;
+	
+}
+
+.p2-main-3 .p2-4, .p2-5{
+	border: 1px solid black;
+	padding: 3%;
+	margin: 2%;
+	background: lightgrey;
+}
+
+.facts {
+	display: flex;
+	margin-top: 2%;
+}
+
+.facts-text {
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+	width: 45%;
+
+}
+ul {
+	list-style-type: circle;
+	margin: 7%;
+}
+
+.services-info-img{
+	width: 46%;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.f2 {
+	margin-top: 5%;
+	margin-bottom: 7%;
+}
 
 
