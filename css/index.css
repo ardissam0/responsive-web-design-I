@@ -84,42 +84,37 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-	margin: 0 auto;
+	margin: 0;
 	width: 90%;
 }
 
 header {
-	width: 90%;
-	background-color: coral;
+	width: 100%;
 	opacity: 70%;
 	padding: 10px;
-	position: fixed;
 }
 
-header nav {
+nav{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
-header nav a{
-	color: black;
+nav div a{
+    color: black;
+    justify-content: space-between;
+    margin-left: 20px;
+
 }
 header .logo {
-	width: 15%;
+    width: 60%;
+
 }
 
-header nav a{
+header nav div a{
 	
 	text-decoration: none;
 }
 
-header nav a:hover{
-	border: 1px solid white;
-	padding: 8px;
-	background-color: black;
-	border-radius: 30px;
-	color: white;
-}
 
 .cta {
 	display: flex;
@@ -133,9 +128,7 @@ header nav a:hover{
 	flex-direction: column;
 	justify-content: center;
 }
-.cta img{
-	width: 44%;
-}
+
 
 h1 {
 	display: flex;
@@ -164,29 +157,34 @@ hr {
 	border: 1px solid black;
 	width: 100%;
 	background-color: black;
-	margin-top: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
 }
 
 
 .top-content {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    margin-left: 2%;
 }
 
 .middle-img {
 	width: 100%;
-	margin-top: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
 }
 
 .bottom-content {
 	display:flex;
 	justify-content: space-around;
 	justify-content: space-between;
-	margin-top: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
 }
 
 .contact {
-	margin-top: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
 }
 
 address {
@@ -203,98 +201,73 @@ footer {
 	margin-bottom: 7%;
 }
 
-/* Start of the Services page CSS styling*/
 
+@media (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: space-between;
+    }
 
-.nav2 {
-	display: flex;
-	justify-content: space-evenly;
+    nav .logo {
+        width: 30%;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        
+    }
+    .cta .pic1 {
+        display: none; 
+    }
 }
 
-.nav2 nav a {
-	margin-left: 8%;
-}
-.logo2 {
-	width: 50%;
-	margin-left: 20%;
-}
-.services-header-img {
-	width: 100%;
-	margin-top: 7%
-}
+@media (max-width: 500px) {
+   
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+       
+    }
 
-.p2-title , .p2-title p{
-	width: 100%;
-	margin-top: 3%;
+    nav div a {
+        border: 1px solid grey;
+        padding: 3% 45%;
+        text-align: center;
+        display: block;
+        width: 100%;
+        
+    }
+
+    nav div .logo {
+       text-align: center;
+       width: 50%;
+       margin-left: 55px;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2%;
+    }
+
+    .top-content p {
+        margin-bottom: 3%;
+    }
+
+    .bottom-content {
+        display:flex;
+        justify-content: space-around;
+        justify-content: space-between;
+        margin-top: 3%;
+        margin-left: 2%;
+        flex-direction: column;
+    }
+
+    .bottom-content p{
+        margin-bottom: 3%;
+    }
 }
-
-.p2-main-over {
-	width: 100%;
-}
-
-.p2-main-1{
-	display: flex;
-	
-}
-
-.p2-main-1 .p2-a, .p2-1{
-	border: 1px solid black;
-	padding: 3%;
-	margin: 2%;
-	background: lightgrey;
-}
-
-
-.p2-main-2{
-	display: flex;
-	
-}
-
-.p2-main-2 .p2-2, .p2-3{
-	border: 1px solid black;
-	padding: 3%;
-	margin: 2%;
-	background: lightgrey;
-}
-
-.p2-main-3{
-	display: flex;
-	
-}
-
-.p2-main-3 .p2-4, .p2-5{
-	border: 1px solid black;
-	padding: 3%;
-	margin: 2%;
-	background: lightgrey;
-}
-
-.facts {
-	display: flex;
-	margin-top: 2%;
-}
-
-.facts-text {
-	display: flex;
-	flex-direction: column;
-	margin: 2%;
-	width: 45%;
-
-}
-ul {
-	list-style-type: circle;
-	margin: 7%;
-}
-
-.services-info-img{
-	width: 46%;
-	margin-left: 3%;
-	margin-top: 2%;
-}
-
-.f2 {
-	margin-top: 5%;
-	margin-bottom: 7%;
-}
-
-
